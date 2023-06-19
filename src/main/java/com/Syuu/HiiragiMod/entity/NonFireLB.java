@@ -114,7 +114,7 @@ public class NonFireLB extends LightningBolt {
             ((LightningRodBlock)blockstate.getBlock()).onLightningStrike(blockstate, this.level, blockpos);
         }
 
-    }]
+    }
 
     private BlockPos getStrikePosition() {
         Vec3 vec3 = this.position();

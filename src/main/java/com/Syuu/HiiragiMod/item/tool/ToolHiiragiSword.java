@@ -1,6 +1,7 @@
 package com.Syuu.HiiragiMod.item.tool;
 
-import com.Syuu.HiiragiMod.entity.NonaFireLB;
+import com.Syuu.HiiragiMod.entity.NonFireLB;
+import com.Syuu.HiiragiMod.entity.NonFireLB;
 import com.Syuu.HiiragiMod.main.HiiragiMod;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
@@ -54,8 +55,8 @@ public class ToolHiiragiSword extends SwordItem {
             @Override
             public void run() {
                 BlockPos pos = enemy.blockPosition();
-                LightningBolt nonFire = new NonaFireLB(world);
-                nonFire.moveRelative(Vec3.atBottomCenterOf(pos));
+                LightningBolt nonFire = new NonFireLB(world);
+                nonFire.moveTo(Vec3.atBottomCenterOf(pos));
                 nonFire.setCause(Player instanceof ServerPlayer ? (ServerPlayer) Player : null);
                 world.addFreshEntity(nonFire);
             }
