@@ -16,5 +16,4 @@ public class HiiragiMod {
     public static final CreativeModeTab HIIRAGIMOD_TAB = new HiiragiModTab();
 
     public static final CreativeModeTab SYUUMOD_TAB = new SyuuModTab();
-
 }
