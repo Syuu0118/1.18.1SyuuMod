@@ -7,5 +7,6 @@
 
   "item.hiiragimod.hiiragi_pickaxe" : "Hiiragi pickaxe",
 
-
+  "key.category.hiiragimod" : "HiiragiMod",
+  "key.hiiragimod.modeChange" : "ModeChange"
 }
